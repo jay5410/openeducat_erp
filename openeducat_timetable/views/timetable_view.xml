@@ -15,7 +15,7 @@
                     <field name="end_datetime"/>
                     <field name="state"/>
                     <field name="course_id" optional="hide"/>
-                    <field name="timing_id" optional="hide"/>
+<!--                    <field name="timing_id" optional="hide"/>-->
                     <field name="type" optional="hide"/>
                 </tree>
             </field>
@@ -66,7 +66,7 @@
                                 <field name="type"/>
                             </group>
                             <group>
-                                <field name="timing_id"/>
+<!--                                <field name="timing_id"/>-->
                                 <field name="batch_id" options='{"no_open": True}'
                                        context="{'course_id': course_id,'get_parent_batch':1}"/>
                                 <field name="classroom_id"/>
@@ -135,7 +135,9 @@
                     <field name="faculty_id"/>
                     <field name="course_id"/>
                     <field name="batch_id"/>
-                    <field name="timing_id"/>
+<!--                    <field name="timing_id"/>-->
+                    <field name="start_datetime"/>
+                    <field name="end_datetime"/>
                     <field name="subject_id"/>
                     <field name="type"/>
                 </calendar>
@@ -176,7 +178,9 @@
                                 <div class="oe_kanban_content">
                                     <div>
                                         <strong>
-                                            <field name="timing_id"/>
+<!--                                            <field name="start_datetime" options='{"widget":"date", "hide_seconds":"True","format": "%I:%M:%S %p"}'/>-->
+<!--                                            <span t-esc="time.strftime('%A, %d %B %Y',time.strptime(o.date_order,'%Y-%m-%d %H:%M:%S'))"/>-->
+                                           <field name="timing"/>
                                         </strong>
                                     </div>
                                     <div class="oe_kanban_left">
@@ -228,7 +232,7 @@
                 <pivot string="Session Analysis">
                     <field name="name"/>
                     <field name="faculty_id" type="col"/>
-                    <field name="timing_id"/>
+<!--                    <field name="timing_id"/>-->
                     <field name="course_id"/>
                     <field name="batch_id"/>
                     <field name="subject_id"/>
