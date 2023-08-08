@@ -146,4 +146,3 @@ msgstr "用户"
 #: model:ir.model,name:openeducat_parent.model_op_subject_registration
 msgid "op.subject.registration"
 msgstr ""
-

@@ -479,4 +479,3 @@ msgstr "WO"
 #: selection:op.timetable,type:0
 msgid "Wednesday"
 msgstr "Woensdag"
-

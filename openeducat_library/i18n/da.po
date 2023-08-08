@@ -946,4 +946,3 @@ msgstr "Køb anmodning"
 #: help:op.book.unit,website_message_ids:0
 msgid "Website communication history"
 msgstr "Hjemmeside Kommunikationsoversigt"
-

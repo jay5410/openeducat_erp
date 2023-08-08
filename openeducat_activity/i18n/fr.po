@@ -137,4 +137,3 @@ msgstr "Étudiant(s)"
 #: field:student.migrate,course_to_id:0
 msgid "To Course"
 msgstr "Au cours"
-

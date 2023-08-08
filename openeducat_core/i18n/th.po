@@ -2871,4 +2871,3 @@ msgstr "หรือ"
 #: model:ir.model.fields,field_description:openeducat_core.field_op_subject_registration__state
 msgid "state"
 msgstr "สถานะ"
-

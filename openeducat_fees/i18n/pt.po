@@ -604,4 +604,3 @@ msgstr "Assistente para Taxas Relatório de detalhes"
 #: model:product.template,weight_uom_name:openeducat_fees.op_product_8_product_template
 msgid "kg"
 msgstr ""
-

@@ -1379,4 +1379,3 @@ msgstr "واحد رسانه نمی تواند صادر شود زیرا وضعی�
 #: model_terms:ir.ui.view,arch_db:openeducat_library.view_media_unit_search
 msgid "media Units"
 msgstr "واحدهای رسانه ای"
-

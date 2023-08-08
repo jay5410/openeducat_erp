@@ -613,4 +613,3 @@ msgstr "Semana"
 #, python-format
 msgid "You can't delete none draft submissions!"
 msgstr "Você não pode excluir nenhum projecto de submissões!"
-

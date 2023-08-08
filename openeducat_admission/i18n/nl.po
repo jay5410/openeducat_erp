@@ -767,4 +767,3 @@ msgstr "ritssluiting"
 #: model:ir.model.fields,field_description:openeducat_admission.field_op_admission__image
 msgid "image"
 msgstr "beeld"
-

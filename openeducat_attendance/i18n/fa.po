@@ -265,4 +265,3 @@ msgstr "به روز:"
 #: view:website:openeducat_attendance.student_attendance_report
 msgid "Total Absence"
 msgstr "غیبت کامل"
-

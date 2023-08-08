@@ -353,4 +353,3 @@ msgstr "ข้อความเว็บไซต์"
 #: model:ir.model.fields,help:openeducat_activity.field_op_activity__website_message_ids
 msgid "Website communication history"
 msgstr "ประวัติการสื่อสารเว็บไซต์"
-

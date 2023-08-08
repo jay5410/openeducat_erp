@@ -600,4 +600,3 @@ msgstr "Zip"
 #: view:op.admission.register:openeducat_admission.view_op_admission_register_search
 msgid "product"
 msgstr "produkt"
-

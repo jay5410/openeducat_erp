@@ -1110,4 +1110,3 @@ msgid "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
 msgstr "tempor incididunt UT Labore et dolore นา aliqua Ut enim โฆษณาขีดต่ำที่สุด\n"
 "                                veniam,\n"
 "                                โฟน nostrud exercitation ullamco laboris ค้างคายูทาห์ aliquip"
-

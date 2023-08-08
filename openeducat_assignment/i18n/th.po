@@ -613,4 +613,3 @@ msgstr "สัปดาห์"
 #, python-format
 msgid "You can't delete none draft submissions!"
 msgstr "คุณไม่สามารถลบไม่มีร่างส่ง!"
-

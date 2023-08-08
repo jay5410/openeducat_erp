@@ -78,4 +78,3 @@ msgstr "نام"
 #: field:op.facility.line,quantity:0
 msgid "Quantity"
 msgstr "تعداد"
-

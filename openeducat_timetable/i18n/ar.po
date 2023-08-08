@@ -843,4 +843,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:openeducat_timetable.view_session_confirmation_form
 msgid "or"
 msgstr "أو"
-

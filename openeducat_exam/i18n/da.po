@@ -941,4 +941,3 @@ msgstr "Hjemmeside Kommunikationsoversigt"
 #: field:op.result.exam.line,weightage:0
 msgid "Weightage"
 msgstr "Weightage"
-

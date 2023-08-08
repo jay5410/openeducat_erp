@@ -25,4 +25,3 @@ msgstr "Faktureret"
 #: field:op.course,payment_term:0
 msgid "Payment Term"
 msgstr "Betalingsbetingelse"
-

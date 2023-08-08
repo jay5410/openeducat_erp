@@ -128,4 +128,3 @@ msgstr "Producto"
 #: field:op.asset,product_uom_qty:0
 msgid "Quantity"
 msgstr "Cantidad"
-

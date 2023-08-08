@@ -613,4 +613,3 @@ msgstr "Неделю"
 #, python-format
 msgid "You can't delete none draft submissions!"
 msgstr "Вы не можете удалять ни один проект представления!"
-

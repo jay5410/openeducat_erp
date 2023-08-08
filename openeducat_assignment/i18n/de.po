@@ -613,4 +613,3 @@ msgstr "Woche"
 #, python-format
 msgid "You can't delete none draft submissions!"
 msgstr "Sie können nicht keinen Entwurf Eingaben löschen!"
-

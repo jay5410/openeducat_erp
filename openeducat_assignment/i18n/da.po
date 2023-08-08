@@ -389,4 +389,3 @@ msgstr "Hjemmeside meddelelser"
 #: help:op.assignment.sub.line,website_message_ids:0
 msgid "Website communication history"
 msgstr "Hjemmeside Kommunikationsoversigt"
-

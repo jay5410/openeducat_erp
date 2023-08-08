@@ -1110,4 +1110,3 @@ msgid "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\n"
 msgstr "tempor incididunt ut labore et dolore magna aliqua. Út Enim quảng cáo nốt trắng\n"
 "                                veniam,\n"
 "                                quis nostrud exercitation ullamco laboris tạm thời ut aliquip"
-

@@ -613,4 +613,3 @@ msgstr "周"
 #, python-format
 msgid "You can't delete none draft submissions!"
 msgstr "您不能删除没有提交草案！"
-
