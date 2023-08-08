@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_gen_time_table_line_tree" model="ir.ui.view">
             <field name="name">gen.time.table.line.tree</field>
             <field name="model">gen.time.table.line</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Session Line" editable="top">
+                <tree editable="top">
                     <field name="day" invisible="1"/>
                     <field name="session_start_time" widget="float_time"/>
                     <field name="session_end_time" widget="float_time"/>
@@ -107,5 +107,5 @@
             <field name="view_mode">form</field>
             <field name="view_id" ref="view_generate_time_table_form"/>
         </record>
-    </data>
+    
 </odoo>

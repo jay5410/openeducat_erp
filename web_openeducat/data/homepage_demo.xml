@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="home_page" model="ir.ui.view">
             <field name="name">Home Page</field>
             <field name="type">qweb</field>
@@ -925,5 +925,5 @@
             <field name="website_id" ref="website.default_website"/>
             <field name="is_homepage">True</field>
         </record>
-    </data>
+    
 </odoo>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    
         <record id="module_category_openeducat" model="ir.module.category">
             <field name="name">OpenEduCat</field>
             <field name="description">Helps you manage your institutes different-different users.</field>
@@ -106,5 +106,5 @@
                 'in', company_ids)]
             </field>
         </record>
-    </data>
+    
 </odoo>

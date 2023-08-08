@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
+<odoo noupdate="1">
+    
         <record id="op_batch_1" model="op.batch">
             <field name="code">course-sb1</field>
             <field name="name">Course-batch-Sem-1</field>
@@ -100,5 +100,5 @@
                    eval="(DateTime.today() + relativedelta(years=2)).strftime('%Y-06-04 %H:%M')"/>
             <field name="course_id" ref="op_course_12"/>
         </record>
-    </data>
+    
 </odoo>

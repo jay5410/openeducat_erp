@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_op_exam_tree" model="ir.ui.view">
             <field name="name">op.exam.tree</field>
             <field name="model">op.exam</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Exam">
+                <tree>
                     <field name="session_id"/>
                     <field name="name"/>
                     <field name="subject_id"/>
@@ -126,5 +126,5 @@
             <field name="view_mode">tree</field>
             <field name="view_id" ref="view_op_exam_tree"/>
         </record>
-    </data>
+    
 </odoo>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_op_assignment_sub_line_tree" model="ir.ui.view">
             <field name="name">op.assignment.sub.line.tree</field>
             <field name="model">op.assignment.sub.line</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Assignment Sub Line">
+                <tree>
                     <field name="assignment_id"/>
                     <field name="student_id"/>
                     <field name="submission_date"/>
@@ -160,5 +160,5 @@
             <field name="view_id" ref="view_op_assignment_sub_line_pivot"/>
         </record>
 
-    </data>
+    
 </odoo>

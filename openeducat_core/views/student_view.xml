@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="kanban_view_student" model="ir.ui.view">
             <field name="name">Student Kanban</field>
             <field name="model">op.student</field>
@@ -58,7 +58,7 @@
             <field name="model">op.student</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Student">
+                <tree>
                     <field name="title" optional="show"/>
                     <field name="name"/>
                     <field name="gender" optional="hide"/>
@@ -237,5 +237,5 @@
             <field name="domain">[]</field>
             <field name="context">{}</field>
         </record>
-    </data>
+    
 </odoo>

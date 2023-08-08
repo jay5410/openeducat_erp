@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
+<odoo noupdate="1">
+    
         <record id="op_course_1" model="op.course">
             <field name="code">C1</field>
             <field name="name">Course 1</field>
@@ -98,5 +98,5 @@
                                eval="[(6,0, [ref('op_subject_37'), ref('op_subject_38'), ref('op_subject_39'), ref('op_subject_40')])]"/>
             <field name="department_id" ref="openeducat_core.op_department_3"/>
         </record>
-    </data>
+    
 </odoo>

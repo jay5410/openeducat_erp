@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    
         <record model="ir.rule" id="student_session_rule">
             <field name="name">Student Session rule</field>
             <field name="model_id" ref="model_op_session"/>
@@ -24,5 +24,5 @@
                    eval="[(4, ref('openeducat_core.group_op_faculty'))]"/>
             <field name="domain_force">[('faculty_id.user_id','=',user.id)]</field>
         </record>
-    </data>
+    
 </odoo>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_op_student_tree_library_inherit" model="ir.ui.view">
             <field name="name">op.student.tree.library.inherit</field>
             <field name="model">op.student</field>
@@ -111,7 +111,7 @@
                                 <group>
                                     <separator string="Admission Details" colspan="4"/>
                                     <field name="course_detail_ids" nolabel="1">
-                                        <tree string="Course Details" editable="bottom">
+                                        <tree editable="bottom">
                                             <field name="course_id"/>
                                             <field name="batch_id" domain="[('course_id', '=', course_id)]"/>
                                             <field name="roll_number"/>
@@ -124,5 +124,5 @@
                 </form>
             </field>
         </record>
-    </data>
+    
 </odoo>

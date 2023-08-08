@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="activity_smart_button" model="ir.ui.view">
             <field name="name">activity.smart.buttons</field>
             <field name="model">op.student</field>
@@ -17,5 +17,5 @@
                 </xpath>
             </field>
         </record>
-    </data>
+    
 </odoo>

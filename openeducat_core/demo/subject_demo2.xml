@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
+<odoo noupdate="1">
+    
         <record id="openeducat_core.op_subject_1" model="op.subject">
             <field name="code">BOA1-001</field>
             <field name="name">Financial Accounting</field>
@@ -239,5 +239,5 @@
             <field name="type">theory</field>
             <field name="subject_type">elective</field>
         </record>
-    </data>
+    
 </odoo>

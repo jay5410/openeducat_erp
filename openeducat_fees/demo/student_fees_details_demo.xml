@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
+<odoo noupdate="1">
+    
         <record id="op_student_fees_details_1" model="op.student.fees.details">
             <field name="state">draft</field>
             <field name="amount">30000</field>
@@ -144,5 +144,5 @@
             <field name="fees_line_id" ref="openeducat_fees.op_fees_term_line_5"/>
             <field name="date" eval="(DateTime.today() + relativedelta(days=5))"/>
         </record>
-    </data>
+    
 </odoo>

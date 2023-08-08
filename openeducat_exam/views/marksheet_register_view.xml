@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_op_marksheet_register_tree" model="ir.ui.view">
             <field name="name">op.marksheet.register.tree</field>
             <field name="model">op.marksheet.register</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Marksheet Register">
+                <tree>
                     <field name="exam_session_id"/>
                     <field name="generated_date"/>
                     <field name="generated_by"/>
@@ -121,5 +121,5 @@
             <field name="view_mode">tree</field>
             <field name="view_id" ref="view_op_marksheet_register_tree"/>
         </record>
-    </data>
+    
 </odoo>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_op_session_tree" model="ir.ui.view">
             <field name="name">op.session.tree</field>
             <field name="model">op.session</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Sessions">
+                <tree>
                     <field name="faculty_id"/>
                     <field name="batch_id"/>
                     <field name="subject_id"/>
@@ -273,5 +273,5 @@
             <field name="view_mode">calendar</field>
             <field name="view_id" ref="view_op_session_calendar"/>
         </record>
-    </data>
+    
 </odoo>

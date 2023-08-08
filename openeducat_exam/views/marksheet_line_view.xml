@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_op_marksheet_line_tree" model="ir.ui.view">
             <field name="name">op.marksheet.line.tree</field>
             <field name="model">op.marksheet.line</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Marksheet Line">
+                <tree>
                     <field name="student_id"/>
                     <field name="total_marks"/>
                     <field name="percentage"/>
@@ -91,5 +91,5 @@
             <field name="view_mode">tree</field>
             <field name="view_id" ref="view_op_marksheet_line_tree"/>
         </record>
-    </data>
+    
 </odoo>

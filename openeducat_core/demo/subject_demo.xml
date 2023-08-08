@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
+<odoo noupdate="1">
+    
         <record id="op_subject_1" model="op.subject">
             <field name="code">S-1</field>
             <field name="name">Subject-1</field>
@@ -240,5 +240,5 @@
             <field name="type">theory</field>
             <field name="subject_type">elective</field>
         </record>
-    </data>
+    
 </odoo>

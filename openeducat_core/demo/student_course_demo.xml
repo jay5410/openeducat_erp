@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
+<odoo noupdate="1">
+    
         <record id="op_student_course_1" model="op.student.course">
             <field name="student_id" ref="op_student_1"/>
             <field name="course_id" ref="op_course_2"/>
@@ -168,5 +168,5 @@
             <field name="batch_id" ref="op_batch_5"/>
             <field name="roll_number">528538</field>
         </record>
-    </data>
+    
 </odoo>

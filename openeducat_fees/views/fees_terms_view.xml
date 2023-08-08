@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data>
+    
         <record id="view_fees_terms_tree" model="ir.ui.view">
             <field name="name">op.fees.terms.tree</field>
             <field name="model">op.fees.terms</field>
             <field name="type">tree</field>
             <field name="priority" eval="8"/>
             <field name="arch" type="xml">
-                <tree string="Fees Reminder Terms">
+                <tree>
                     <field name="name"/>
                     <field name="active"/>
                 </tree>
@@ -51,7 +51,7 @@
                                            attrs="{'invisible':[('parent.fees_terms','!=','fixed_date')],'required':[('parent.fees_terms','=','fixed_date')]}"/>
                                     <field name="value" required="1"/>
                                     <field name="fees_element_line">
-                                        <tree string="Information" editable="top">
+                                        <tree editable="top">
                                             <field name="product_id"/>
                                             <field name="value"/>
                                         </tree>
@@ -122,5 +122,5 @@
                 </field>
             </field>
         </record>
-    </data>
+    
 </odoo>
