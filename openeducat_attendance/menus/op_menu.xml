@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    
+
         <menuitem id="menu_op_attendance_root"
                   name=" Attendances"
                   sequence="50"
@@ -46,5 +46,5 @@
                   groups="openeducat_core.group_op_back_office_admin,openeducat_core.group_op_back_office,openeducat_core.group_op_faculty"/>
 
 
-    
+
 </odoo>

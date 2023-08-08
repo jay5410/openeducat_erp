@@ -6,7 +6,7 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <field name="company_type" position="replace">
+            <field name="country_code" position="after">
                 <div>
                     <field name="company_type" widget="radio" options="{'horizontal': true}"/>
                     <field name="is_parent" class="ml16"/>
@@ -14,6 +14,9 @@
                     <field name="is_student"/>
                     <label for="is_student"/>
                 </div>
+            </field>
+            <field name="company_type" position="attributes">
+                <attribute name="invisible">1</attribute>
             </field>
         </field>
     </record>

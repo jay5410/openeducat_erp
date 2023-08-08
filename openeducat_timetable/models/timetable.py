@@ -87,12 +87,14 @@ class OpSession(models.Model):
     def _compute_timing(self):
         tz = pytz.timezone(self.env.user.tz)
         for session in self:
-            session.timing = str(session.start_datetime.astimezone(tz).strftime('%I:%M%p')) + ' - ' + str(
+            session.timing = str(session.start_datetime.astimezone(tz).strftime(
+                '%I:%M%p')) + ' - ' + str(
                 session.end_datetime.astimezone(tz).strftime('%I:%M%p'))
 
     @api.model
     def _expand_groups(self, days, domain, order):
-        weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+        weekdays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday',
+                    'sunday']
         return [day for day in weekdays if day in days]
 
     @api.depends('start_datetime')
@@ -112,8 +114,8 @@ class OpSession(models.Model):
                 session.name = \
                     session.faculty_id.name + ':' + \
                     session.subject_id.name + ':' + str(
-                        session.start_datetime.astimezone(tz).strftime('%I:%M%p')) + '-' + str(
-                        session.end_datetime.astimezone(tz).strftime('%I:%M%p'))
+                        session.start_datetime.astimezone(tz).strftime('%I:%M%p')) + \
+                    '-' + str(session.end_datetime.astimezone(tz).strftime('%I:%M%p'))
 
     # For record rule on student and faculty dashboard
     @api.depends('batch_id', 'faculty_id', 'user_ids.child_ids')
@@ -150,7 +152,7 @@ class OpSession(models.Model):
             raise ValidationError(_(
                 'End Time cannot be set before Start Time.'))
 
-    @api.constrains('faculty_id','start_datetime', 'end_datetime', 'classroom_id',
+    @api.constrains('faculty_id', 'start_datetime', 'end_datetime', 'classroom_id',
                     'batch_id', 'subject_id')
     def check_timetable_fields(self):
         res_param = self.env['ir.config_parameter'].sudo()
@@ -170,46 +172,66 @@ class OpSession(models.Model):
         for session in sessions:
             if self.id != session.id:
                 if is_faculty_constraint:
-                    if self.faculty_id.id == session.faculty_id.id and \
-                            self.start_datetime.date() == session.start_datetime.date() and (
-                            session.start_datetime.time() < self.start_datetime.time() < session.end_datetime.time() or
-                            session.start_datetime.time() < self.end_datetime.time() < session.end_datetime.time() or
-                            self.start_datetime.time() <= session.start_datetime.time() < self.end_datetime.time() or
-                            self.start_datetime.time() < session.end_datetime.time() <= self.end_datetime.time()):
+                    if (self.faculty_id.id == session.faculty_id.id and
+                            self.start_datetime.date() == session.start_datetime.date()
+                            and (
+                            session.start_datetime.time() < self.start_datetime.time()
+                            < session.end_datetime.time() or
+                            session.start_datetime.time() < self.end_datetime.time()
+                            < session.end_datetime.time() or
+                            self.start_datetime.time() <= session.start_datetime.time()
+                            < self.end_datetime.time() or
+                            self.start_datetime.time() < session.end_datetime.time()
+                            <= self.end_datetime.time())):
                         raise ValidationError(_(
                             'You cannot create a session with '
                             'same faculty on same date '
                             'and time'))
                 if is_classroom_constraint:
-                    if self.classroom_id.id == session.classroom_id.id and \
-                            self.start_datetime.date() == session.start_datetime.date() and (
-                            session.start_datetime.time() < self.start_datetime.time() < session.end_datetime.time() or
-                            session.start_datetime.time() < self.end_datetime.time() < session.end_datetime.time() or
-                            self.start_datetime.time() <= session.start_datetime.time() < self.end_datetime.time() or
-                            self.start_datetime.time() < session.end_datetime.time() <= self.end_datetime.time()):
+                    if (self.classroom_id.id == session.classroom_id.id and
+                            self.start_datetime.date() == session.start_datetime.date()
+                            and (
+                            session.start_datetime.time() < self.start_datetime.time()
+                            < session.end_datetime.time() or
+                            session.start_datetime.time() < self.end_datetime.time()
+                            < session.end_datetime.time() or
+                            self.start_datetime.time() <= session.start_datetime.time()
+                            < self.end_datetime.time() or
+                            self.start_datetime.time() < session.end_datetime.time()
+                            <= self.end_datetime.time())):
                         raise ValidationError(_(
                             'You cannot create a session with '
                             'same classroom on same date'
                             ' and time'))
                 if is_batch_and_subject_constraint:
-                    if self.batch_id.id == session.batch_id.id and \
-                            self.start_datetime.date() == session.start_datetime.date() and (
-                            session.start_datetime.time() < self.start_datetime.time() < session.end_datetime.time() or
-                            session.start_datetime.time() < self.end_datetime.time() < session.end_datetime.time() or
-                            self.start_datetime.time() <= session.start_datetime.time() < self.end_datetime.time() or
-                            self.start_datetime.time() < session.end_datetime.time() <= self.end_datetime.time()) \
-                            and self.subject_id.id == session.subject_id.id:
+                    if (self.batch_id.id == session.batch_id.id and
+                            self.start_datetime.date() == session.start_datetime.date()
+                            and (
+                            session.start_datetime.time() < self.start_datetime.time()
+                            < session.end_datetime.time() or
+                            session.start_datetime.time() < self.end_datetime.time()
+                            < session.end_datetime.time() or
+                            self.start_datetime.time() <= session.start_datetime.time()
+                            < self.end_datetime.time() or
+                            self.start_datetime.time() < session.end_datetime.time()
+                            <= self.end_datetime.time()) and
+                            self.subject_id.id == session.subject_id.id):
                         raise ValidationError(_(
                             'You cannot create a session for '
                             'the same batch on same time '
                             'and for same subject'))
                 if is_batch_constraint:
-                    if self.batch_id.id == session.batch_id.id and \
-                            self.start_datetime.date() == session.start_datetime.date() and (
-                            session.start_datetime.time() < self.start_datetime.time() < session.end_datetime.time() or
-                            session.start_datetime.time() < self.end_datetime.time() < session.end_datetime.time() or
-                            self.start_datetime.time() <= session.start_datetime.time() < self.end_datetime.time() or
-                            self.start_datetime.time() < session.end_datetime.time() <= self.end_datetime.time()):
+                    if (self.batch_id.id == session.batch_id.id and
+                            self.start_datetime.date() == session.start_datetime.date()
+                            and (
+                            session.start_datetime.time() < self.start_datetime.time()
+                            < session.end_datetime.time() or
+                            session.start_datetime.time() < self.end_datetime.time()
+                            < session.end_datetime.time() or
+                            self.start_datetime.time() <= session.start_datetime.time()
+                            < self.end_datetime.time() or
+                            self.start_datetime.time() < session.end_datetime.time()
+                            <= self.end_datetime.time())):
                         raise ValidationError(_(
                             'You cannot create a session for the '
                             'same batch on same time '
@@ -274,7 +296,7 @@ class OpSession(models.Model):
 
     def get_subject(self):
         return 'Lecture of ' + self.faculty_id.name + \
-               ' for ' + self.subject_id.name + ' is ' + self.state
+            ' for ' + self.subject_id.name + ' is ' + self.state
 
     def write(self, vals):
         data = super(OpSession,

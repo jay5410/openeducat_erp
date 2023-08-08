@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_department_1" model="op.department">
             <field name="name">Department of Business Law</field>
             <field name="code">D1</field>
@@ -20,5 +20,5 @@
             <field name="name">Department of Management and Marketing</field>
             <field name="code">D4</field>
         </record>
-    
+
 </odoo>

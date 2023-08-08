@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    
+
         <record id="view_op_attendance_line_tree" model="ir.ui.view">
             <field name="name">op.attendance.line.tree</field>
             <field name="model">op.attendance.line</field>
@@ -146,5 +146,5 @@
             <field name="view_id" ref="view_op_attendance_line_tree"/>
         </record>
 
-    
+
 </odoo>

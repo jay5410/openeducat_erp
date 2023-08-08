@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    
+
         <record id="view_fees_terms_tree" model="ir.ui.view">
             <field name="name">op.fees.terms.tree</field>
             <field name="model">op.fees.terms</field>
@@ -122,5 +122,5 @@
                 </field>
             </field>
         </record>
-    
+
 </odoo>

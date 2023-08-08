@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    
+
         <template id="report_ticket">
             <style>
                 .font{
@@ -18,7 +18,7 @@
                         <br/>
                         <br/>
                         <br/>
-                        <div class="oe_structure"/>
+                        <div class="oe_structure" id="exam_report_ticket"/>
                         <t t-foreach="get_data" t-as="o">
                             <div class="font">
                                 <div class="page">
@@ -121,5 +121,5 @@
                 </t>
             </t>
         </template>
-    
+
 </odoo>

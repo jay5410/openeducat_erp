@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    
+
         <record model="ir.ui.view" id="student_hall_ticket_form">
             <field name="name">student.hall.ticket.form</field>
             <field name="model">student.hall.ticket</field>
@@ -25,5 +25,5 @@
             <field name="view_id" ref="student_hall_ticket_form"/>
             <field name="target">new</field>
         </record>
-    
+
 </odoo>

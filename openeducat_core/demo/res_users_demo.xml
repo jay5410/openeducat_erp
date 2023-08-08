@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_user_student" model="res.users" context="{'no_reset_password': True}">
             <field name="name">Sumita</field>
             <field name="password">student</field>
@@ -66,7 +66,7 @@
                    (4,ref('openeducat_core.op_department_4'))]"/>
         </record>
 
-        <record id="openeducat_core.op_res_partner_1" model="res.partner">
+        <!-- <record id="openeducat_core.op_res_partner_1" model="res.partner">
             <field name="user_id" ref="openeducat_core.op_user_student"/>
         </record>
 
@@ -80,6 +80,6 @@
 
         <record id="openeducat_core.op_res_partner_32" model="res.partner">
             <field name="user_id" ref="openeducat_core.op_user_boa"/>
-        </record>
-    
+        </record> -->
+
 </odoo>

@@ -1,5 +1,5 @@
 <odoo>
-    
+
         <template id="student_attendance_report">
             <t t-call="web.html_container">
                 <t t-call="web.external_layout">
@@ -59,5 +59,5 @@
                 </t>
             </t>
         </template>
-    
+
 </odoo>

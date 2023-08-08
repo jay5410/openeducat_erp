@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    
+
         <menuitem id="menu_op_exam_root"
                   name="Exams"
                   sequence="70"
@@ -97,5 +97,5 @@
                   sequence="40"
                   action="act_open_op_grade_configuration_view"
                   groups="openeducat_core.group_op_back_office,openeducat_core.group_op_back_office_admin,openeducat_core.group_op_faculty"/>
-    
+
 </odoo>

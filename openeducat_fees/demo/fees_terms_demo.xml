@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_fees_term_1" model="op.fees.terms">
             <field name="name">C-1 Fees Term</field>
             <field name="note">Course 1 Fees Terms and Condition</field>
@@ -46,5 +46,5 @@
             <field name="line_ids"
                    eval="[(4, ref('op_fees_term_date_line_8')),(4, ref('op_fees_term_date_line_9')),(4, ref('op_fees_term_date_line_10'))]"/>
         </record>
-    
+
 </odoo>

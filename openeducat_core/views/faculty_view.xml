@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    
+
         <record model="ir.ui.view" id="kanban_view_faculty">
             <field name="name">Faculty Kanban</field>
             <field name="model">op.faculty</field>
@@ -234,5 +234,5 @@
             <field name="context">{}</field>
         </record>
 
-    
+
 </odoo>

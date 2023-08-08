@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    
+
         <record id="group_op_parent" model="res.groups">
             <field name="name">Parent</field>
             <field name="category_id" ref="openeducat_core.module_category_openeducat_others"/>
@@ -28,5 +28,5 @@
             <field name="groups" eval="[(4, ref('openeducat_parent.group_op_parent'))]"/>
             <field name="domain_force">['|', ('user_id','=',user.id), ('user_id','in',user.child_ids.ids)]</field>
         </record>
-    
+
 </odoo>

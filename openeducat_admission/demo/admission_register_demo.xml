@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_admission_register_1" model="op.admission.register">
             <field name="name">Course-Sem-1</field>
             <field name="min_count">10</field>
@@ -44,5 +44,5 @@
             <field name="course_id" ref="openeducat_core.op_course_6"/>
             <field name="product_id" ref="openeducat_fees.op_product_6"/>
         </record>
-    
+
 </odoo>

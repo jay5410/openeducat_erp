@@ -52,7 +52,7 @@ class TestExamAttendees(TestExamCommon):
 
     def test_attendees(self):
         attendees = self.op_exam_attendees.search([])
-        for data in attendees:
+        for data in attendees: # noqa
             attendees._sql_constraints
 
             for x in attendees:

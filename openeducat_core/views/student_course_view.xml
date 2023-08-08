@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    
+
         <record id="view_op_student_course_tree" model="ir.ui.view">
             <field name="name">op.student.course.tree</field>
             <field name="model">op.student.course</field>
@@ -97,5 +97,5 @@
             <field name="search_view_id" ref="view_op_student_course_search"/>
 
         </record>
-    
+
 </odoo>

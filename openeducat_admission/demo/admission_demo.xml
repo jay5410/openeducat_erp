@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_admission_1" model="op.admission">
             <field name="title" ref="base.res_partner_title_miss"/>
             <field name="name">Sumita S Dani</field>
@@ -523,5 +523,5 @@
             <field name="application_date" eval="DateTime.now()"/>
             <field name="admission_date" eval="DateTime.now()"/>
         </record>
-    
+
 </odoo>

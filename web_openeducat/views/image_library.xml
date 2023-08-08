@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    
+
 
         <record id="about_us_image_1" model="ir.attachment">
             <field name="public" eval="True"/>
@@ -198,5 +198,5 @@
             <field name="url">/web_openeducat/static/src/img/blog-4.jpg</field>
         </record>
 
-    
+
 </odoo>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_exam_1" model="op.exam">
             <field name="exam_code">E1D1-FA</field>
             <field name="name">BOA-E1-D1</field>
@@ -168,5 +168,5 @@
             <field name="end_time"
                    eval="(DateTime.today() - relativedelta(months=2)).strftime('%Y-%m-20 06:30')"/>
         </record>
-    
+
 </odoo>

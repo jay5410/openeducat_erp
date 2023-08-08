@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_faculty_1" model="op.faculty">
             <field name="title" ref="base.res_partner_title_mister"/>
             <field name="name">James D church</field>
@@ -240,5 +240,5 @@
                    eval="[(4,ref('openeducat_core.op_department_3'))]"/>
 
         </record>
-    
+
 </odoo>

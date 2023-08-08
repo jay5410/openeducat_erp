@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
-    
+
         <record id="op_assignment_1" model="op.assignment">
             <field name="name">BOA Sem-1-Asg-001</field>
             <field name="state">publish</field>
@@ -51,5 +51,5 @@
                    eval="[(6,0, [ref('openeducat_core.op_student_9'), ref('openeducat_core.op_student_10'), ref('openeducat_core.op_student_11'), ref('openeducat_core.op_student_12')])]"/>
             <field name="description">Please answer the following questions briefly: - 1. What are the different types of land. Explain in detail using figure. 2. What are 3 main techniques to recognize the land type?</field>
         </record>
-    
+
 </odoo>
